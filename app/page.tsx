@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#f8ffe5]">
-      <div className="px-[50px] border border-[#D1D1D1] border-b-1 flex justify-between items-center sm:px-[15px] sm:py-[12px] border-t-[0px] border-l-[0px] border-r-[0px]">
+      <div className="px-[50px] border border-[#D1D1D1] border-b-1 flex justify-between items-center sm:px-[15px] sm:py-[12px] border-t-[0px] border-l-[0px] border-r-[0px] md:px-[20px]">
         <Link href="/">
             <Image
                 src={Logo}
@@ -21,8 +21,8 @@ export default function Home() {
           Get Notification
         </button>
       </div>
-      <div className="py-[50px] text-center flex flex-col gap-[30px] sm:px-[15px]">
-        <h3 className="font-[family-name:var(--font-Fredoka-bold)] text-[60px] text-[#3E3636] sm:text-[30px] sm:leading-[40px] leading-[65px]">
+      <div className="py-[50px] text-center flex flex-col gap-[30px] sm:px-[15px] md:px-[15px]">
+        <h3 className="font-[family-name:var(--font-Fredoka-bold)] text-[60px] text-[#3E3636] sm:text-[30px] sm:leading-[40px] leading-[65px] md:text-p[35px]">
           Your Favorite Snacks From Home 
           <strong className="text-[#71A62F] block">Delivered Straight To Your Door</strong>
         </h3>
@@ -34,7 +34,7 @@ export default function Home() {
       <div className="py-[20px] pb-[80px]">
         <div className="max-w-[1100px] m-auto">
           <div className="flex gap-[20px] justify-center">
-            <form action="opps" className="flex gap-[20px] justify-center sm:flex-col sm:px-[15px]">
+            <form action="opps" className="flex gap-[20px] justify-center sm:flex-col sm:px-[15px] md:flex-col sm-px-[15px]">
             <div className="flex items-center gap-[20px] sm:flex-col">
               <strong className="text-[#3E3636] text-[16px] font-[family-name:var(--font-popin-bold)]">Email me when box from</strong>
               <form className="max-w-sm mx-auto sm:max-w-[100%]">
@@ -47,10 +47,10 @@ export default function Home() {
                 </select>
               </form>              
             </div>
-            <div className="flex items-center gap-[20px] sm:flex-col">
+            <div className="flex items-center gap-[20px] sm:flex-col md:justify-center">
               <strong className="text-[#3E3636] text-[16px] font-[family-name:var(--font-popin-bold)]">are available</strong>
               <form>
-                <input type="email" className="bg-[#fff] px-[20px] h-[60px] shadow-lg rounded-[12px] sm:max-w-[100%]" placeholder="user@mail.here" />
+                <input type="email" className="bg-[#fff] px-[20px] h-[60px] shadow-lg rounded-[12px]" placeholder="user@mail.here" />
               </form>
             </div>
             <div>

@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Opps() {
   return (
     <div className="min-h-screen">
-      <div className="px-[50px] border border-[#D1D1D1] border-b-1 flex justify-between items-center sm:px-[15px] sm:py-[12px] border-t-[0px] border-l-[0px] border-r-[0px]">
+      <div className="px-[50px] border border-[#D1D1D1] border-b-1 flex justify-between items-center sm:px-[15px] sm:py-[12px] border-t-[0px] border-l-[0px] border-r-[0px] md:px-[20px]">
         <Link href="/">
             <Image
                 src={Logo}
@@ -19,7 +19,7 @@ export default function Opps() {
         </button>
       </div>
       <div className="py-[40px] text-center flex flex-col gap-[30px] sm:px-[15px] sm:gap-[10px]">
-        <h3 className="font-[family-name:var(--font-Fredoka-bold)] text-[60px] text-[#3E3636] leading-[65px] sm:text-[30px]">
+        <h3 className="font-[family-name:var(--font-Fredoka-bold)] text-[60px] text-[#3E3636] leading-[65px] sm:text-[30px] sm:leading-[30px]">
         Oops! <strong className="text-[#71A62F]">We are sold out...</strong>
         </h3>
         <div className="max-w-[650px] m-auto">
@@ -27,7 +27,7 @@ export default function Opps() {
         </div>
       </div>
 
-      <div className="sm:px-[15px]">
+      <div className="sm:px-[15px] md:px-[15px]">
       <div className="max-w-[785px] sm:w-full m-auto rounded-[10px] overflow-hidden mt-[50px] shadow-2xl shadow-[#5C94FF45] bg-gradient-to-t from-[#FFFAC5] to-[#FFFAC5] p-[2px] rounded-[12px] sm:px-[15px]">
         <div className="py-[30px] px-[50px] sm:px-[15px] rounded-[12px]">
           <div className="text-center text-black text-[20px] font-bold font-[family-name:var(--font-popin-bold)]">Write your email</div>        
