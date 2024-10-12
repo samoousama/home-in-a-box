@@ -14,7 +14,7 @@ export default function Opps() {
                 className="sm:h-[50px] sm:w-[100px]"
             />  
         </Link>
-        <button className="bg-gradient-to-t from-[#FDE705] to-[#FDE705] text-[#201B1B] font-bold py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] sm:text-[14px] sm:h-[43px]">
+        <button className="bg-gradient-to-t from-[#FDE705] hover:to-[#d9c608] to-[#FDE705] transition-all hover:transition-all text-[#201B1B] font-bold py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] sm:text-[14px] sm:h-[43px]">
           Get Notification
         </button>
       </div>
@@ -34,7 +34,7 @@ export default function Opps() {
             <form className="max-w-full mx-auto mt-[20px]" action="/opps">   
                 <div className="relative">
                     <input type="search" id="default-search" className="block w-full h-[70px] sm:h-[55px] p-5 sm:text-[14px] text-[16px] italic text-[#474747] placeholder-[#474747] border border-[#ffffff45] rounded-lg bg-[#fff] focus:border-none" placeholder="Enter Email Address" />
-                    <button type="submit" className="bg-gradient-to-t from-[#FDE705] hover:to-[#FDE705] to-[#FDE705] transition-all text-black font-[family-name:var(--font-popin-bold)] sm:relative sm:right-[0px] sm:m-auto sm:block sm:w-full sm:mt-[20px] absolute right-[10px] top-0 bottom-0 m-auto h-[48px] focus:ring-0 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-[20px] sm:text-[14px] px-[50px] sm:px-[12px]">Notify Me</button>
+                    <button type="submit" className="bg-gradient-to-t from-[#FDE705] hover:to-[#d9c608] to-[#FDE705] transition-all hover:transition-all transition-all text-black font-[family-name:var(--font-popin-bold)] sm:relative sm:right-[0px] sm:m-auto sm:block sm:w-full sm:mt-[20px] absolute right-[10px] top-0 bottom-0 m-auto h-[48px] focus:ring-0 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-[20px] sm:text-[14px] px-[50px] sm:px-[12px]">Notify Me</button>
                 </div>
             </form>
         </div>

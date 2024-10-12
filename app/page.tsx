@@ -17,7 +17,7 @@ export default function Home() {
                 className="sm:h-[50px] sm:w-[100px]"
             />  
         </Link>
-        <button className="bg-gradient-to-t from-[#FDE705] to-[#FDE705] text-[#201B1B] font-bold py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] sm:text-[14px] sm:h-[43px]">
+        <button className="bg-gradient-to-t from-[#FDE705] hover:to-[#d9c608] to-[#FDE705] transition-all hover:transition-all text-[#201B1B] font-bold py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] sm:text-[14px] sm:h-[43px]">
           Get Notification
         </button>
       </div>
@@ -54,7 +54,7 @@ export default function Home() {
               </form>
             </div>
             <div>
-            <button className="bg-gradient-to-t from-[#FDE705] to-[#FDE705] text-[#201B1B] font-bold py-2 px-6 rounded-[10px] h-[60px] font-[family-name:var(--font-popin-bold)] text-[20px] m-auto block">
+            <button className="bg-gradient-to-t from-[#FDE705] hover:to-[#d9c608] to-[#FDE705] transition-all hover:transition-all text-[#201B1B] font-bold py-2 px-6 rounded-[10px] h-[60px] font-[family-name:var(--font-popin-bold)] text-[20px] m-auto block">
               Notify Me
             </button>
             </div>
@@ -102,7 +102,7 @@ export default function Home() {
       <div className="py-[80px] sm:py-[50px] sm:px-[15px]">
          <h3 className="font-[family-name:var(--font-Fredoka-bold)] text-[36px] text-[#3E3636] leading-[52px] text-center">Featured Packages</h3>
          <div className="grid grid-cols-3 max-w-[1180px] m-auto mt-[40px] gap-[30px] sm:grid-cols-1">
-          <div className="bg-[#FFFAC5] py-[30px] px-[30px] shadow shadow-[#ADA8A840] rounded-[24px]">
+          <div className="bg-[#FFFAC5] py-[30px] px-[30px] shadow shadow-[#ADA8A840] rounded-[24px] hover:translate-y-[-5px] transition-all hover:transition-all">
             <Image
                src={CardImage}
                alt=""
@@ -111,11 +111,11 @@ export default function Home() {
             <h3 className="text-[24px] text-center text-[#3E3636] py-[5px] font-bold  font-[family-name:var(--font-popin-bold)]">American Pack</h3>
             <strong className="text-[18px] block text-center text-[#71A62F] py-[10px] font-bold  font-[family-name:var(--font-popin-bold)]">What’s Inside?</strong>
             <p className="text-center text-[16px] text-[#3E3636] leading-[24px] font-[family-name:var(--font-popin-regular)]">Enjoy a monthly box of authentic snacks from American! Relish the flavors of home and satisfy your cravings with a delightful assortment of treats!</p>
-            <button className="bg-gradient-to-t from-[#FDE705] to-[#FDE705] text-[#201B1B] font-bold py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] m-auto block mt-[30px]">
+            <button className="bg-gradient-to-t from-[#FDE705] to-[#FDE705] text-[#201B1B] font-bold py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] m-auto block mt-[30px] shadow-lg hover:shadow-[#ccc]">
               Buy Now
             </button>
           </div>
-          <div className="bg-[#FFFAC5] py-[30px] px-[30px] shadow shadow-[#ADA8A840] rounded-[24px]">
+          <div className="bg-[#FFFAC5] py-[30px] px-[30px] shadow shadow-[#ADA8A840] rounded-[24px] hover:translate-y-[-5px] transition-all hover:transition-all">
             <Image
                src={CardImage}
                alt=""
@@ -124,11 +124,11 @@ export default function Home() {
             <h3 className="text-[24px] text-center text-[#3E3636] py-[5px] font-bold  font-[family-name:var(--font-popin-bold)]">Turkish Treats</h3>
             <strong className="text-[18px] block text-center text-[#71A62F] py-[10px] font-bold  font-[family-name:var(--font-popin-bold)]">What’s Inside?</strong>
             <p className="text-center text-[16px] text-[#3E3636] leading-[24px] font-[family-name:var(--font-popin-regular)]">Enjoy a monthly box of authentic snacks from American! Relish the flavors of home and satisfy your cravings with a delightful assortment of treats!</p>
-            <button className="bg-gradient-to-t from-[#C3C3C3] to-[#C3C3C3] text-[#717171] font-[500] py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] m-auto block mt-[30px]">
+            <button className="bg-gradient-to-t from-[#C3C3C3] to-[#C3C3C3] text-[#717171] font-[500] py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] m-auto block mt-[30px] shadow-lg hover:shadow-[#ccc]">
               Sold Out
             </button>
           </div>
-          <div className="bg-[#FFFAC5] py-[30px] px-[30px] shadow shadow-[#ADA8A840] rounded-[24px]">
+          <div className="bg-[#FFFAC5] py-[30px] px-[30px] shadow shadow-[#ADA8A840] rounded-[24px] hover:translate-y-[-5px] transition-all hover:transition-all">
             <Image
                src={CardImage}
                alt=""
@@ -137,11 +137,11 @@ export default function Home() {
             <h3 className="text-[24px] text-center text-[#3E3636] py-[5px] font-bold  font-[family-name:var(--font-popin-bold)]">Danish Choco</h3>
             <strong className="text-[18px] block text-center text-[#71A62F] py-[10px] font-bold  font-[family-name:var(--font-popin-bold)]">What’s Inside?</strong>
             <p className="text-center text-[16px] text-[#3E3636] leading-[24px] font-[family-name:var(--font-popin-regular)]">Enjoy a monthly box of authentic snacks from American! Relish the flavors of home and satisfy your cravings with a delightful assortment of treats!</p>
-            <button className="bg-gradient-to-t from-[#C3C3C3] to-[#C3C3C3] text-[#717171] font-[500] py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] m-auto block mt-[30px]">
+            <button className="bg-gradient-to-t from-[#C3C3C3] to-[#C3C3C3] text-[#717171] font-[500] py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] m-auto block mt-[30px] shadow-lg hover:shadow-[#ccc]">
               Sold Out
             </button>
           </div>  
-          <div className="bg-[#FFFAC5] py-[30px] px-[30px] shadow shadow-[#ADA8A840] rounded-[24px]">
+          <div className="bg-[#FFFAC5] py-[30px] px-[30px] shadow shadow-[#ADA8A840] rounded-[24px] hover:translate-y-[-5px] transition-all hover:transition-all">
             <Image
                src={CardImage}
                alt=""
@@ -150,11 +150,11 @@ export default function Home() {
             <h3 className="text-[24px] text-center text-[#3E3636] py-[5px] font-bold  font-[family-name:var(--font-popin-bold)]">American Pack</h3>
             <strong className="text-[18px] block text-center text-[#71A62F] py-[10px] font-bold  font-[family-name:var(--font-popin-bold)]">What’s Inside?</strong>
             <p className="text-center text-[16px] text-[#3E3636] leading-[24px] font-[family-name:var(--font-popin-regular)]">Enjoy a monthly box of authentic snacks from American! Relish the flavors of home and satisfy your cravings with a delightful assortment of treats!</p>
-            <button className="bg-gradient-to-t from-[#C3C3C3] to-[#C3C3C3] text-[#717171] font-[500] py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] m-auto block mt-[30px]">
+            <button className="bg-gradient-to-t from-[#C3C3C3] to-[#C3C3C3] text-[#717171] font-[500] py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] m-auto block mt-[30px] shadow-lg hover:shadow-[#ccc]">
               Sold Out
             </button>
           </div>
-          <div className="bg-[#FFFAC5] py-[30px] px-[30px] shadow shadow-[#ADA8A840] rounded-[24px]">
+          <div className="bg-[#FFFAC5] py-[30px] px-[30px] shadow shadow-[#ADA8A840] rounded-[24px] hover:translate-y-[-5px] transition-all hover:transition-all">
             <Image
                src={CardImage}
                alt=""
@@ -163,11 +163,11 @@ export default function Home() {
             <h3 className="text-[24px] text-center text-[#3E3636] py-[5px] font-bold  font-[family-name:var(--font-popin-bold)]">Turkish Treats</h3>
             <strong className="text-[18px] block text-center text-[#71A62F] py-[10px] font-bold  font-[family-name:var(--font-popin-bold)]">What’s Inside?</strong>
             <p className="text-center text-[16px] text-[#3E3636] leading-[24px] font-[family-name:var(--font-popin-regular)]">Enjoy a monthly box of authentic snacks from American! Relish the flavors of home and satisfy your cravings with a delightful assortment of treats!</p>
-            <button className="bg-gradient-to-t from-[#C3C3C3] to-[#C3C3C3] text-[#717171] font-[500] py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] m-auto block mt-[30px]">
+            <button className="bg-gradient-to-t from-[#C3C3C3] to-[#C3C3C3] text-[#717171] font-[500] py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] m-auto block mt-[30px] shadow-lg hover:shadow-[#ccc]">
               Sold Out
             </button>
           </div>
-          <div className="bg-[#FFFAC5] py-[30px] px-[30px] shadow shadow-[#ADA8A840] rounded-[24px]">
+          <div className="bg-[#FFFAC5] py-[30px] px-[30px] shadow shadow-[#ADA8A840] rounded-[24px] hover:translate-y-[-5px] transition-all hover:transition-all">
             <Image
                src={CardImage}
                alt=""
@@ -176,7 +176,7 @@ export default function Home() {
             <h3 className="text-[24px] text-center text-[#3E3636] py-[5px] font-bold  font-[family-name:var(--font-popin-bold)]">Danish Choco</h3>
             <strong className="text-[18px] block text-center text-[#71A62F] py-[10px] font-bold  font-[family-name:var(--font-popin-bold)]">What’s Inside?</strong>
             <p className="text-center text-[16px] text-[#3E3636] leading-[24px] font-[family-name:var(--font-popin-regular)]">Enjoy a monthly box of authentic snacks from American! Relish the flavors of home and satisfy your cravings with a delightful assortment of treats!</p>
-            <button className="bg-gradient-to-t from-[#C3C3C3] to-[#C3C3C3] text-[#717171] font-[500] py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] m-auto block mt-[30px]">
+            <button className="bg-gradient-to-t from-[#C3C3C3] to-[#C3C3C3] text-[#717171] font-[500] py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] m-auto block mt-[30px] shadow-lg hover:shadow-[#ccc]">
               Sold Out
             </button>
           </div>                              
