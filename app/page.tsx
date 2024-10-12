@@ -9,35 +9,36 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#f8ffe5]">
-      <div className="px-[50px] border border-[#D1D1D1] border-b-1 flex justify-between items-center">
+      <div className="px-[50px] border border-[#D1D1D1] border-b-1 flex justify-between items-center sm:px-[15px] sm:py-[12px] border-t-[0px] border-l-[0px] border-r-[0px]">
         <Link href="/">
             <Image
                 src={Logo}
                 alt=""
+                className="sm:h-[50px] sm:w-[100px]"
             />  
         </Link>
-        <button className="bg-gradient-to-t from-[#FDE705] to-[#FDE705] text-[#201B1B] font-bold py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px]">
+        <button className="bg-gradient-to-t from-[#FDE705] to-[#FDE705] text-[#201B1B] font-bold py-2 px-6 rounded-[10px] h-[53px] font-[family-name:var(--font-popin-bold)] text-[20px] sm:text-[14px] sm:h-[43px]">
           Get Notification
         </button>
       </div>
-      <div className="py-[50px] text-center flex flex-col gap-[30px]">
-        <h3 className="font-[family-name:var(--font-Fredoka-bold)] text-[60px] text-[#3E3636] leading-[65px]">
+      <div className="py-[50px] text-center flex flex-col gap-[30px] sm:px-[15px]">
+        <h3 className="font-[family-name:var(--font-Fredoka-bold)] text-[60px] text-[#3E3636] sm:text-[30px] sm:leading-[40px] leading-[65px]">
           Your Favorite Snacks From Home 
           <strong className="text-[#71A62F] block">Delivered Straight To Your Door</strong>
         </h3>
         <div className="max-w-[650px] m-auto">
-          <p className="text-[16px] leading-[24px] text-[#3E3636]">Living abroad means leving the food, snacks, and memories we loved so much. Now, you can get a care package of goodies delivered to your every month so you can always have a taste of home no mattetr what</p>
+          <p className="text-[16px] sm:text-[14px] sm:leading-[20px] leading-[24px] text-[#3E3636]">Living abroad means leving the food, snacks, and memories we loved so much. Now, you can get a care package of goodies delivered to your every month so you can always have a taste of home no mattetr what</p>
         </div>
       </div>
 
       <div className="py-[20px] pb-[80px]">
         <div className="max-w-[1100px] m-auto">
           <div className="flex gap-[20px] justify-center">
-            <form action="opps" className="flex gap-[20px] justify-center">
-            <div className="flex items-center gap-[20px]">
+            <form action="opps" className="flex gap-[20px] justify-center sm:flex-col sm:px-[15px]">
+            <div className="flex items-center gap-[20px] sm:flex-col">
               <strong className="text-[#3E3636] text-[16px] font-[family-name:var(--font-popin-bold)]">Email me when box from</strong>
-              <form className="max-w-sm mx-auto">
-                <select id="countries" className="bg-[#FFFFFF] shadow-lg border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[237px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 h-[60px]">
+              <form className="max-w-sm mx-auto sm:max-w-[100%]">
+                <select id="countries" className="bg-[#FFFFFF] shadow-lg border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[237px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 h-[60px] sm:max-w-[100%]">
                   <option selected>Choose a country</option>
                   <option value="US">United States</option>
                   <option value="CA">Canada</option>
@@ -46,10 +47,10 @@ export default function Home() {
                 </select>
               </form>              
             </div>
-            <div className="flex items-center gap-[20px]">
+            <div className="flex items-center gap-[20px] sm:flex-col">
               <strong className="text-[#3E3636] text-[16px] font-[family-name:var(--font-popin-bold)]">are available</strong>
               <form>
-                <input type="email" className="bg-[#fff] px-[20px] h-[60px] shadow-lg rounded-[12px]" placeholder="user@mail.here" />
+                <input type="email" className="bg-[#fff] px-[20px] h-[60px] shadow-lg rounded-[12px] sm:max-w-[100%]" placeholder="user@mail.here" />
               </form>
             </div>
             <div>
@@ -62,8 +63,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 max-w-[1200px] m-auto">
-        <div className="text-left flex gap-[20px] items-center">
+      <div className="grid grid-cols-3 max-w-[1200px] m-auto sm:grid-cols-1 px-[15px] sm:gap-[40px]">
+        <div className="text-left flex gap-[20px] items-center sm:justify-center">
           <Image
             src={IconProduct}
             alt=""
@@ -85,7 +86,7 @@ export default function Home() {
             <p className="text-[16px] text-[#3E3636] italic">Monthly Delivery for Your Convenience</p>
           </div>
         </div>
-        <div className="text-left flex gap-[20px] items-center justify-center">
+        <div className="text-left flex gap-[20px] items-center justify-center sm:justify-start">
           <Image
             src={RefundIcon}
             alt=""
@@ -98,9 +99,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-[80px]">
+      <div className="py-[80px] sm:py-[50px] sm:px-[15px]">
          <h3 className="font-[family-name:var(--font-Fredoka-bold)] text-[36px] text-[#3E3636] leading-[52px] text-center">Featured Packages</h3>
-         <div className="grid grid-cols-3 max-w-[1180px] m-auto mt-[40px] gap-[30px]">
+         <div className="grid grid-cols-3 max-w-[1180px] m-auto mt-[40px] gap-[30px] sm:grid-cols-1">
           <div className="bg-[#FFFAC5] py-[30px] px-[30px] shadow shadow-[#ADA8A840] rounded-[24px]">
             <Image
                src={CardImage}
