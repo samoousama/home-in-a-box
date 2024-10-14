@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Opps() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[url(img/bg-image.png)] bg-no-repeat bg-cover">
       <div className="px-[50px] border border-[#D1D1D1] border-b-1 flex justify-between items-center sm:px-[15px] sm:py-[12px] border-t-[0px] border-l-[0px] border-r-[0px] md:px-[20px]">
         <Link href="/">
             <Image

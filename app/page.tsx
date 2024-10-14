@@ -10,7 +10,7 @@ import ArrowRight from "../app/img/arrowimg-right.png"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#f8ffe5]">
+    <div className="min-h-screen bg-[url(img/bg-image.png)] bg-no-repeat bg-cover">
       <div className="px-[50px] border border-[#D1D1D1] border-b-1 flex justify-between items-center sm:px-[15px] sm:py-[12px] border-t-[0px] border-l-[0px] border-r-[0px] md:px-[20px]">
         <Link href="/">
             <Image
@@ -26,11 +26,11 @@ export default function Home() {
 
     <div className="relative">
 
-      <div className="absolute top-[40px] sm:hidden md:hidden">
+      <div className="absolute top-[40px] md:hidden left-0 sm:top-[20px]">
         <Image
             src={ArrowLeft}
             alt=""
-            className=""
+            className="max-w-[250px] xl:max-w-[200px] lg:hidden sm:max-w-[100px]"
         /> 
       </div>  
 
@@ -76,18 +76,18 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="absolute right-0 bottom-[10px] md:hidden">
+      <div className="absolute right-0 bottom-[10px] md:hidden sm:bottom-[360px]">
         <Image
             src={ArrowRight}
             alt=""
-            className="max-w-[250px]"
+            className="max-w-[250px] xl:max-w-[200px] lg:hidden sm:max-w-[135px]"
         /> 
       </div>  
 
       </div>
 
       <div className="grid grid-cols-3 max-w-[1200px] m-auto sm:grid-cols-1 px-[15px] sm:gap-[40px]">
-        <div className="text-left flex gap-[20px] items-center sm:justify-center">
+        <div className="text-left flex gap-[20px] items-center sm:justify-start">
           <Image
             src={IconProduct}
             alt=""
