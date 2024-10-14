@@ -1,10 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../app/img/logo.svg"
 import IconProduct from "../app/img/great-product-icon.png"
 import DeliveryIcon from "../app/img/delivery-icon.png"
 import RefundIcon from "../app/img/refund-icon.png"
 import CardImage from "../app/img/card-img.png"
-import Link from "next/link";
+import ArrowLeft from "../app/img/arrowimg-left.png"
+import ArrowRight from "../app/img/arrowimg-right.png"
 
 export default function Home() {
   return (
@@ -21,6 +23,17 @@ export default function Home() {
           Get Notification
         </button>
       </div>
+
+    <div className="relative">
+
+      <div className="absolute top-[40px] sm:hidden md:hidden">
+        <Image
+            src={ArrowLeft}
+            alt=""
+            className=""
+        /> 
+      </div>  
+
       <div className="py-[50px] text-center flex flex-col gap-[30px] sm:px-[15px] md:px-[15px]">
         <h3 className="font-[family-name:var(--font-Fredoka-bold)] text-[60px] text-[#3E3636] sm:text-[30px] sm:leading-[40px] leading-[65px] md:text-p[35px]">
           Your Favorite Snacks From Home 
@@ -61,6 +74,16 @@ export default function Home() {
             </form>
           </div>  
         </div>
+      </div>
+
+      <div className="absolute right-0 bottom-[10px] md:hidden">
+        <Image
+            src={ArrowRight}
+            alt=""
+            className="max-w-[250px]"
+        /> 
+      </div>  
+
       </div>
 
       <div className="grid grid-cols-3 max-w-[1200px] m-auto sm:grid-cols-1 px-[15px] sm:gap-[40px]">
